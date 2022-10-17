@@ -1,18 +1,27 @@
-## Getting Started
+## Consumindo API do IMDB
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Neste projeto, eu realizo uma busca pelos melhores 250 filmes segundo o IMDB.
 
-## Folder Structure
+## Funcionamento
 
-The workspace contains two folders by default, where:
+Você pode baixar os arquivos do projeto e importar para a sua IDE.
+Quando for executado, como saída você terá uma lista ordenada por posição, dos 250 melhores filmes segundo o IMDB, com o título e a classificação.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+![Terminal_VSC](https://user-images.githubusercontent.com/71046387/196253247-2ca4524c-8e17-4869-ab17-b6acd68a3b03.png)
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Desenvolvimento 
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Inicialmente é criada uma conexão HTTP, onde fazemos uma requisição do tipo GET para a API do IMDB.
+Que nos retorna como resposta, uma lista dos 250 melhores filmes, mas em um formato JSON que é um pouco estranho de ler.
+Em seguida precisamos filtar esse JSON para retirar dele as informações com as quais desejamos trabalhar.
+Por último, manipulamos e exibimos as informações de uma forma organizada e legível.
 
-## Dependency Management
+## Sobre
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+O código foi desenvolvido em Java na IDE Visual Studio Code.
+Inicialmente trata-se de um projeto bem simples, mas com muitas possibilidades para futuras implementações.
+
+
+
+
+
